@@ -1,6 +1,6 @@
 "use client";
 
-import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlinePlus} from 'react-icons/ai';
 import Modal from './modal';
 import { FormEventHandler, useState } from 'react';
 import { addTodo } from '@/api';
