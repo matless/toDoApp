@@ -45,14 +45,14 @@ const Task: React.FC<TaskProps> = ({ task }) => {
         />
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit}>
           <form onSubmit={handleSubmitEditTodo}>
-            <h3 className='font-bold text-lg'>Edit task</h3>
+            <h3 className='font-bold text-lg dark:text-black'>Edit task</h3>
             <div className='modal-action'>
               <input
                 value={taskToEdit}
                 onChange={(e) => setTaskToEdit(e.target.value)}
                 type='text'
                 placeholder='Type here'
-                className='input input-bordered w-full'
+                className='input input-bordered w-full dark:text-black'
               />
               <button type='submit' className='btn'>
                 Submit
@@ -67,7 +67,7 @@ const Task: React.FC<TaskProps> = ({ task }) => {
           size={25}
         />
         <Modal modalOpen={openModalDeleted} setModalOpen={setOpenModalDeleted}>
-          <h3 className='text-lg'>
+          <h3 className='text-lg dark:text-black'>
             Are you sure, you want to delete this task?
           </h3>
           <div className='modal-action'>
